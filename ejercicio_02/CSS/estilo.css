@@ -1,25 +1,90 @@
-#mi_boton {
-    background-color:rgb(158, 157, 227);/*Color del fondo*/
-    color:rgb(22, 21, 22);/*Color del texto*/
-    font-size: 16px;
+:root {
+  --color_primario: #afc7eb;
+  --color_secundario: #EEF3D5;
+  --color-de-fondo: #efdbeb;
+  --color-4: #e48cd1;
+  --color-5: #CABEED;
 }
-button:hover {
-    background-color: grey;
-    cursor: pointer;
-    color:rgb(180, 214, 234);
+
+#mi_boton {
+    background-color: var(--color_primario);
+    color: rgb(24, 21, 21));
     font-size: 16px;
+    border-radius: 8px;
 }
 
 #mi_boton2 {
-    background-color:grey;
-    color:rgb(23, 23, 23);/*Color del texto*/
+    color: rgb(23, 23, 23); /* color del texto */
+    background-color: rgb(238, 135, 195);
     font-size: 16px;
     border-radius: 8px;
 }
 
-button {
-    background-color:rgb(214, 186, 225);
-    color:rgb(24, 23, 23);
+#mi_button3 {
+    background-color: rgb(214, 186, 225);
+    color: rgb(24, 23, 23);
     font-size: 16px;
     border-radius: 8px;
 }
+
+button:hover {
+    background-color: grey;
+    cursor: pointer;
+    color: rgb(180, 214, 234);
+    font-size: 16px;
+}
+
+/* 1. Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Selector de tipo (etiqueta html) */
+p {
+    line-height: 1.6;
+    color: rgb(41, 42, 43);
+    background: linear-gradient(181deg, #9D88DB, #FDC0FF, #AB35A5, #AC7AD0, #141615);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* 3. Selector de clase (prefijo .) */
+.destacado {
+background: radial-gradient(circle, #CA91B9, #C33777, #BB60BA, #eae3ea);
+    border-radius: 30px;
+    box-shadow: 0 4px 6px -1px rgba(35, 34, 34, 0.1);
+    border: 2px solid rgb(80, 81, 81);
+    padding: 10px;
+    padding-top:4vh;
+}
+
+/* 4. Selector de id (aplica a un solo elemento) */
+#parrafo_1 {
+    background: linear-gradient(181deg, #9D88DB, #FDC0FF, #AB35A5, #AC7AD0);
+    color: white;
+    border-radius: 15px;
+}
+
+#parrafo_2 {
+    background: radial-gradient(circle, #CA91B9, #C33777, #BB60BA, #010001);
+    color: white;
+    border-radius: 15px;
+}
+
+/* 5. Selector descendente (a las etiquetas p dentro de un nav) */
+nav p {
+    font-size: 16px;
+    background: linear-gradient(181deg, #9D88DB, #FDC0FF, #AB35A5, #AC7AD0);
+    margin: 20px;
+}
+
+/*
+Unidades de medida
+1. px (píxeles): Unidad de medida fija. Recomendada para bordes.
+2. rem (root em): Medcida relativa al tamaño de fuente.
+     1rem = 16px
+3. % (porcentaje): Medida relativa al tamaño del elemento padre.
+4. vh (viewport height): Relativo a la pantalla completa.
+       100vh = 100% de la altura visible del monitor.
