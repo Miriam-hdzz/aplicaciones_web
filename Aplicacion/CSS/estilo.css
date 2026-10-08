@@ -1,0 +1,147 @@
+:root {
+  --color-1: #b29ad2;
+  --color-2: #C49C88;
+  --color-3: #8ec1bc;
+  --color-4: #b79eb5;
+  --color-5: #605489;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+#contenedor {
+    border: 2px solid var(--color-5);
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+#contenedor > div {
+    flex: 1;
+}
+
+h1 {
+    font-size: 32px;
+    color: var(--color-5);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--color-4);
+    margin-bottom: 15px;
+}
+
+form div {
+    border: 1.5px solid var(--color-5);
+    border-radius: 25px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+form span {
+    margin-right: 10px;
+    color: var(--color-5);
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: var(--color-5);
+    background: transparent;
+}
+
+a {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: var(--color-5);
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid var(--color-5);
+    background-color: #ffffff;
+    color: var(--color-5);
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#texto-o {
+    text-align: center;
+    font-size: 12px;
+    color: var(--color-3);
+    margin-bottom: 10px;
+}
+
+#sociales {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#sociales button {
+    flex: 1;
+    padding: 8px;
+    border: 1.5px solid var(--color-5);
+    background-color: #ffffff;
+    color: var(--color-5);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+#btn-registro {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 6px;
+    border: 1.5px solid var(--color-5);
+    background-color: #ffffff;
+    color: var(--color-5);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+}
+/*
+Unidades de medida
+1. px (píxeles): Unidad de medida fija. Recomendada para bordes.
+2. rem (root em): Medcida relativa al tamaño de fuente.
+     1rem = 16px
+3. % (porcentaje): Medida relativa al tamaño del elemento padre.
+4. vh (viewport height): Relativo a la pantalla completa.
+       100vh = 100% de la altura visible del monitor.
